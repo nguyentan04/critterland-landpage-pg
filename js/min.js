@@ -16,8 +16,8 @@ window.onscroll = function() {
         $('#id_mobile_icon').css('top', '20px');
         $('#id_mobile_open_menu').css('top', '38px');
     } else {
-        $('#id_mobile_icon').css('top', '60px'); 
-        $('#id_mobile_open_menu').css('top', '78px');
+        $('#id_mobile_icon').css('top', '80px'); 
+        $('#id_mobile_open_menu').css('top', '98px');
     }  
 }
 
@@ -52,4 +52,24 @@ hideMenuMobile = function() {
     $('#'+ ID_MENU_MOBILE).removeClass(MENU_MOBILE_OPEN);
     $('#'+ ID_MENU_MOBILE).addClass(MENU_MOBILE_CLOSE);
     log("hideMenuMobile");
+}
+
+hideSlideLeft = function() {
+    $('.slide-item').each(function(i){
+        $(this).removeClass('hide');
+
+        if (i > 1) {
+            $(this).addClass('hide');
+        } 
+    })
+}
+
+hideSlideRight = function() {
+    $('.slide-item').each(function(i){
+        $(this).removeClass('hide');
+
+        if (i < 2) {
+            $(this).addClass('hide');
+        } 
+    })
 }

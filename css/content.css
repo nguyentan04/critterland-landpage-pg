@@ -33,14 +33,14 @@ html {
 }
 .header > .mobile > a > .logo-game{
     width: 80px;
-    top: 60px;
+    top: 80px;
     left: 20px;
     position:fixed;
     z-index:50;
 }
 .header > .mobile > .menu-icon{
     position: fixed;
-    top: 78px;
+    top: 98px;
     right: 20px;
     font-size: 40px;
     color: #787878;
@@ -193,6 +193,7 @@ html {
     margin: 0 auto;
     width: 300px;
     display: block;
+    padding-top: 100px;
 }
 .body > .body-content > .content-home > .home-welcome > img{
     width: 300px;
@@ -237,6 +238,7 @@ html {
 .body > .body-content > .content-gameplay > .gameplay-header{
     margin: 0 auto;
     display: block;
+    padding-top: 50px;
 }
 
 .body > .body-content > .content-gameplay > .gameplay-header > h2{
@@ -259,12 +261,46 @@ html {
     max-width: 900px;
 }
 
+/*Slide show */
+.body > .body-content > .content-gameplay > .gameplay-slide > .slide-menu {
+    margin: 0 auto;
+    width: 304px;
+    display: block;
+}
+.body > .body-content > .content-gameplay > .gameplay-slide > .slide-menu > .slide-item.hide{
+    display:none;
+}
 .body > .body-content > .content-gameplay > .gameplay-slide > .slide-menu > .slide-item {
     display:inline;
 }
 
 .body > .body-content > .content-gameplay > .gameplay-slide > .slide-menu > .slide-item > img{
-    width: 200px;
+    width: 150px;
+}
+.body > .body-content > .content-gameplay > .gameplay-slide > .slide-menu >.control {
+    position: relative;
+    cursor: pointer;
+    top: -133px;
+    width: 11px;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+.body > .body-content > .content-gameplay > .gameplay-slide > .slide-menu >.control:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+.body > .body-content > .content-gameplay > .gameplay-slide > .slide-menu >.prev {
+    float:left;
+}
+.body > .body-content > .content-gameplay > .gameplay-slide > .slide-menu >.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+    float:right;
 }
 
 .pointer {

@@ -2,6 +2,7 @@ html, head, body, div, ul, li, p, img, h2 {
     margin:0px;
     padding:0px;
     scroll-behavior: smooth;
+    list-style: none;
 }
 a, a:active, a:visited, a:hover {
     text-decoration: none;
@@ -10,6 +11,24 @@ a, a:active, a:visited, a:hover {
 html {
     font-family: Kanit;
     -webkit-font-smoothing: antialiased;
+}
+h2 {
+    color: #00ffd8;    
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 130%;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 20px;
+}
+h3 {
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: auto auto 60px;
+    text-align: center;
+    max-width: 900px;    
 }
 
 .scrollbar::-webkit-scrollbar-track{
@@ -184,12 +203,18 @@ html {
 .body {
     margin-top: -16px;
 }
+.body > .body-content {
+    padding-top:50px;
+    padding-bottom: 50px;
+}
 .body > #home.body-content {
-    background-image: url(../img/bg-section1.png);
+    background-image: url(../img/bg-section1.jpg);
     background-size: cover;
     background-position: center top;
     background-repeat: no-repeat;
     position: relative;
+    width: 100%;
+    display: block;
 }
 .body > .body-content > .content-home > .home-welcome {
     margin: 0 auto;
@@ -208,59 +233,25 @@ html {
 .body > .body-content > .content-home > .home-store > .home-appstore > img, .body > .body-content > .content-home > .home-store > .home-chplay > img{
     width: 100px;
 }
-.body > .body-content > .content-home > .nft {
-    margin: 0 auto;
-    width: 300px;
-    display: block;
-}
-.nft-01 {
-    width: 120px;
-    z-index: 1;
-    transform: scaleX(-1);
-}
-.nft-02 {
-    width: 120px;
-    z-index: 3;
-}
-.nft-03 {
-    width: 198px;
-}
+
 .body > .body-content > .content-home > .home-store > .home-appstore, .body > .body-content > .content-home > .home-store > .home-chplay {
     display:inline;
 }
 /*HOME Welcome*/
 
+/*GamePlay*/
 .body > #gamePlay.body-content {
-    background-image: url(../img/bg-section2.png);
+    background-image: url(../img/bg-section2.jpg);
     background-size: cover;
     background-position: center top;
     background-repeat: no-repeat;
     position: relative;
+    width: 100%;
+    display: block;
 }
 .body > .body-content > .content-gameplay > .gameplay-header{
     margin: 0 auto;
     display: block;
-    padding-top: 50px;
-}
-
-.body > .body-content > .content-gameplay > .gameplay-header > h2{
-    color: #00ffd8;    
-    font-weight: bold;
-    font-size: 30px;
-    line-height: 130%;
-    text-transform: uppercase;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.body > .body-content > .content-gameplay > .gameplay-content > p{
-    color: white;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 1.5;
-    margin: auto auto 60px;
-    text-align: center;
-    max-width: 900px;
 }
 
 /*Slide show */
@@ -301,6 +292,216 @@ html {
     border-radius: 3px 0 0 3px;
     float:right;
 }
+
+/*start mobaEsport*/
+.body > #mobaEsport.body-content {
+    background-image: url(../img/bg-section2.jpg);
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 100%;
+    display: block;
+}
+.body > .body-content > .content-mobaesport {
+    margin: 0 auto;
+    width: 310px;
+}
+.body > .body-content > .content-mobaesport > .mobaesport-play {
+    color: rgb(248, 203, 99);
+    font-family: Kanit;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 130%;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.body > .body-content > .content-mobaesport > .mobaesport-video {
+    margin: 0 auto;
+    position: relative;
+    width: 100%;
+}
+.body > .body-content > .content-mobaesport > .mobaesport-video > img {
+    height: auto;
+    max-width: 100%;
+    image-rendering: -webkit-optimize-contrast;
+}
+.body > .body-content > .content-mobaesport > .mobaesport-video > video {
+    position: absolute;
+    inset: 0px;
+    width: 81%;
+    height: 89%;
+    margin: auto;
+}
+/*end mobaEsport*/
+
+/*start nftsItem*/
+.body > #nftsItem.body-content {
+    background-image: url(../img/bg-section3.png);
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 100%;
+    display: block;
+}
+
+.body > .body-content >.content-nft >.nft-btn {
+    text-align: center;
+    margin: 25px;
+}
+.body > .body-content >.content-nft >.nft-btn > span {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 130%;
+    text-transform: uppercase;
+    padding: 10px 14px; 
+    margin: 0px 10px;
+    background: transparent;
+    border: unset;
+    cursor: pointer;
+}
+.body > .body-content >.content-nft >.nft-btn > span.circle {
+    border-radius: 25px;
+    padding: 10px 40px;
+    margin-top: 20px;
+}
+.body > .body-content >.content-nft >.nft-slide {
+    margin: 0 auto;
+    width: 304px;
+}
+.body > .body-content >.content-nft >.nft-slide >.nft-slide-item {
+    display:inline;
+}
+.body > .body-content >.content-nft >.nft-slide >.nft-slide-item > img{
+    width: 150px;
+}
+/*end nftsItem*/
+
+/*start coinToken*/
+.body > #coinToken.body-content {
+    background-image: url(../img/bg-section3.png);
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 100%;
+    display: block;
+}
+/*end coinToken*/
+
+/*start roadMap*/
+.body > #roadMap.body-content {
+    background-image: url(../img/bg-section3.png);
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 100%;
+    display: block;
+}
+.body > .body-content > .content-roadmap {
+    color: white;
+    margin: 0 auto;
+}
+.body > .body-content > .content-roadmap > .content-roadmap-info {
+    margin: 0 auto;
+    width: 300px;
+}
+.body > .body-content > .content-roadmap > .content-roadmap-info > .info-li.left {
+    position: relative;
+    left: 150px;
+}
+.body > .body-content > .content-roadmap > .content-roadmap-info > .info-li.right {
+    position: relative;
+    right: 1px;
+}
+.body > .body-content > .content-roadmap > .content-roadmap-info > .info-li > .item-content {
+    color: rgb(248, 203, 99);
+    font-size: 20px;
+    line-height: 1.5;
+    font-weight: bold;
+    font-family: Kanit;
+}
+.body > .body-content > .content-roadmap > .content-roadmap-info > .info-li > .item-content > .roadmap-title {
+    color: rgb(248, 203, 99);
+    font-size: 20px;
+    line-height: 1.5;
+    font-weight: bold;
+    font-family: Kanit;
+}
+.body > .body-content > .content-roadmap > .content-roadmap-info > .info-li > .item-content > .roadmap-des {
+    color: rgb(255, 255, 255);
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-top: 5px;
+}
+.body > .body-content > .content-roadmap > .content-roadmap-info > .info-li.left > .item-content {
+    border-left-style: solid;
+    border-left-width: 2px;
+    border-left-color: white;
+    padding-left: 10px;
+    margin-left: 9px;
+    margin-top: -9px;
+}
+.body > .body-content > .content-roadmap > .content-roadmap-info > .info-li.right > .icon-item {
+    width: 50px;
+    margin-left: 151px;
+}
+.body > .body-content > .content-roadmap > .content-roadmap-info > .info-li.right > .item-content {
+    border-right-style: solid;
+    border-right-width: 2px;
+    border-right-color: white;
+    padding-right: 10px;
+    margin-right: 9px;
+    margin-top: -9px;
+    width: 150px;
+    text-align: right;
+}
+/*end roadMap*/
+
+/*start team*/
+.body > #teams.body-content {
+    background-image: url(../img/bg-section3.png);
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 100%;
+    display: block;
+}
+.body > .body-content > .content-teams > .teams-slide{
+    margin: 0 auto;
+    display: block;
+    width: 225px;
+}
+.body > .body-content > .content-teams > .teams-slide > .teams-slide-item{
+    display:inline;
+}
+.body > .body-content > .content-teams > .teams-slide > .teams-slide-item > img{
+    width: 100px;
+    margin: 5px;
+}
+.body > .body-content > .content-teams > .teams-slide > .teams-slide-item > .item-info-title {
+    color: rgb(0, 255, 216);
+    font-size: 13px;
+    font-family: Poppins;
+    line-height: 1.5;
+    font-weight: 600;
+    text-align: center;
+    width: 50%;
+}
+.body > .body-content > .content-teams > .teams-slide > .teams-slide-item > .item-info-position {
+    width: 100%;
+    padding: 10px 2px;
+    color:white;
+    text-align: center;
+    width: 50%;
+}
+/*end team*/
 
 .pointer {
     cursor: pointer;
@@ -343,6 +544,22 @@ html {
     opacity: 1;
 }
 
+.roadmapEffect.left{
+    position: relative;
+    transform: translateX(-150px);
+    opacity: 0;
+    transition: 1s all ease;
+}
+.roadmapEffect.right{
+    position: relative;
+    transform: translateX(150px);
+    opacity: 0;
+    transition: 1s all ease;
+}
+.roadmapEffect.right.active, .roadmapEffect.left.active{
+    transform: translateY(0);
+    opacity: 1;
+}
 @media screen and (min-width: 1024px){
   
 }

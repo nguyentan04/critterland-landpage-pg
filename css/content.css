@@ -19,7 +19,6 @@ html {
 }
 
 .scrollbar::-webkit-scrollbar{
-	width: 12px;
 	background-color: #F5F5F5;
 }
 
@@ -203,7 +202,7 @@ html {
     width: 204px;
     display: block;
 }
-.body > .body-content > .content-home > .home-welcome > .home-appstore > img, .body > .body-content > .content-home > .home-welcome > .home-chplay > img{
+.body > .body-content > .content-home > .home-store > .home-appstore > img, .body > .body-content > .content-home > .home-store > .home-chplay > img{
     width: 100px;
 }
 .body > .body-content > .content-home > .nft {

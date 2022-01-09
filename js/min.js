@@ -12,6 +12,7 @@ document.onload = function() {
 }
 
 window.onscroll = function() {
+    //scroll for menu
     if (document.body.scrollTop > 42 || document.documentElement.scrollTop > 42) {
         $('#id_mobile_icon').css('top', '20px');
         $('#id_mobile_open_menu').css('top', '38px');
@@ -19,6 +20,32 @@ window.onscroll = function() {
         $('#id_mobile_icon').css('top', '80px'); 
         $('#id_mobile_open_menu').css('top', '98px');
     }  
+
+    //scrol for buttion up
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        $('#btn-up').removeClass('hide');
+    } else {
+        $('#btn-up').addClass('hide');
+    }
+
+    // //flow auto scrol load data
+    // $('.auto-scroll').each(function(i) {
+    //     var data = $($('.auto-scroll')[i]);
+    //     var id_data = data.attr('data');
+
+    //     var positionTop = data.position().top;
+    //     var top = document.body.scrollTop || document.documentElement.scrollTop ;
+    //     var height = $(window).height()||$(document).height();
+       
+    //     log('top: '+(top + height)+' - position:' + positionTop);
+    //    if (top + height < positionTop + 150) {
+    //         log('addClass');
+    //         $('#'+id_data).addClass('hide');
+    //    } else {
+    //         log('removeClass');
+    //         $('#'+id_data).removeClass('hide');           
+    //    }
+    // });
 }
 
 //Main function
@@ -28,6 +55,7 @@ $(document).ready(function(){
         setTimeout(function(){$("#id_mobile_close_menu").click(function(){ replaceClassByIdAndData('id_mobile_close_menu', 'close', 'open');}); }, TIME_OUT);
         setTimeout(function(){$("#id_mobile_open_menu").click(function(){ replaceClassByIdAndData('id_mobile_open_menu', 'open', 'close');}); }, TIME_OUT);
         setTimeout(function(){$(".hide-mobile-menu").click(function(){ hideMenuMobile();}); }, TIME_OUT);
+        
     }catch(e){
         log(e);
     }
@@ -72,4 +100,9 @@ hideSlideRight = function() {
             $(this).addClass('hide');
         } 
     })
+}
+
+topFunction = function() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
 }

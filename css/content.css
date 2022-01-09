@@ -20,12 +20,14 @@ html {
 
 .scrollbar::-webkit-scrollbar{
 	background-color: #F5F5F5;
+    width: 12px;
 }
 
 .scrollbar::-webkit-scrollbar-thumb{
 	border-radius: 10px;
 	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
 	background-color: #faf7f5;
+    width:12px;
 }
 
 .header > .desktop {
@@ -327,6 +329,18 @@ html {
     border-radius: 5px;
     opacity: 0.6;
     transition: opacity 0.3s ease 0s, visibility 0.3s ease 0s, background-color 0.3s ease 0s;
+}
+
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+}
+  
+.reveal.active{
+    transform: translateY(0);
+    opacity: 1;
 }
 
 @media screen and (min-width: 1024px){

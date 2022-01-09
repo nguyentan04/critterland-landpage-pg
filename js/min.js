@@ -28,24 +28,7 @@ window.onscroll = function() {
         $('#btn-up').addClass('hide');
     }
 
-    // //flow auto scrol load data
-    // $('.auto-scroll').each(function(i) {
-    //     var data = $($('.auto-scroll')[i]);
-    //     var id_data = data.attr('data');
-
-    //     var positionTop = data.position().top;
-    //     var top = document.body.scrollTop || document.documentElement.scrollTop ;
-    //     var height = $(window).height()||$(document).height();
-       
-    //     log('top: '+(top + height)+' - position:' + positionTop);
-    //    if (top + height < positionTop + 150) {
-    //         log('addClass');
-    //         $('#'+id_data).addClass('hide');
-    //    } else {
-    //         log('removeClass');
-    //         $('#'+id_data).removeClass('hide');           
-    //    }
-    // });
+    setTimeout(function(){ reveal(); }, TIME_OUT);
 }
 
 //Main function
@@ -106,3 +89,20 @@ topFunction = function() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 }
+
+reveal = function() {
+    var reveals = document.querySelectorAll(".reveal");
+  
+    for (var i = 0; i < reveals.length; i++) {
+      var windowHeight = window.innerHeight;
+      var elementTop = reveals[i].getBoundingClientRect().top;
+      var elementVisible = 150;
+  
+      if (elementTop < windowHeight - elementVisible) {
+        reveals[i].classList.add("active");
+      } else {
+        reveals[i].classList.remove("active");
+      }
+    }
+}
+  

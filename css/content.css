@@ -476,10 +476,12 @@ h3 {
 .body > .body-content > .content-teams > .teams-slide{
     margin: 0 auto;
     display: block;
-    width: 225px;
+    width: 210px;
 }
 .body > .body-content > .content-teams > .teams-slide > .teams-slide-item{
-    display:inline;
+    margin: 0 auto;
+    display: inline-block;
+    width: 103px;
 }
 .body > .body-content > .content-teams > .teams-slide > .teams-slide-item > img{
     width: 100px;
@@ -492,14 +494,13 @@ h3 {
     line-height: 1.5;
     font-weight: 600;
     text-align: center;
-    width: 50%;
+    display: block;
 }
 .body > .body-content > .content-teams > .teams-slide > .teams-slide-item > .item-info-position {
-    width: 100%;
     padding: 10px 2px;
     color:white;
     text-align: center;
-    width: 50%;
+    display: block;
 }
 /*end team*/
 
@@ -546,13 +547,13 @@ h3 {
 
 .roadmapEffect.left{
     position: relative;
-    transform: translateX(-150px);
+    transform: translateX(150px);
     opacity: 0;
     transition: 1s all ease;
 }
 .roadmapEffect.right{
     position: relative;
-    transform: translateX(150px);
+    transform: translateX(-150px);
     opacity: 0;
     transition: 1s all ease;
 }

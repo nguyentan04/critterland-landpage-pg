@@ -11,6 +11,7 @@ a, a:active, a:visited, a:hover {
 html {
     font-family: Kanit;
     -webkit-font-smoothing: antialiased;
+    background-color: #030d35;
 }
 h2 {
     color: #00ffd8;    
@@ -208,7 +209,7 @@ h3 {
     padding-bottom: 50px;
 }
 .body > #home.body-content {
-    background-image: url(../img/bg-section1.jpg);
+    /* background-image: url(../img/bg-section1.jpg); */
     background-size: cover;
     background-position: center top;
     background-repeat: no-repeat;
@@ -241,7 +242,7 @@ h3 {
 
 /*GamePlay*/
 .body > #gamePlay.body-content {
-    background-image: url(../img/bg-section2.jpg);
+    /* background-image: url(../img/bg-section2.jpg); */
     background-size: cover;
     background-position: center top;
     background-repeat: no-repeat;
@@ -295,7 +296,7 @@ h3 {
 
 /*start mobaEsport*/
 .body > #mobaEsport.body-content {
-    background-image: url(../img/bg-section2.jpg);
+    /* background-image: url(../img/bg-section2.jpg); */
     background-size: cover;
     background-position: center top;
     background-repeat: no-repeat;
@@ -338,7 +339,7 @@ h3 {
 
 /*start nftsItem*/
 .body > #nftsItem.body-content {
-    background-image: url(../img/bg-section3.png);
+    /* background-image: url(../img/bg-section3.png); */
     background-size: cover;
     background-position: center top;
     background-repeat: no-repeat;
@@ -382,7 +383,7 @@ h3 {
 
 /*start coinToken*/
 .body > #coinToken.body-content {
-    background-image: url(../img/bg-section3.png);
+    /* background-image: url(../img/bg-section3.png); */
     background-size: cover;
     background-position: center top;
     background-repeat: no-repeat;
@@ -394,7 +395,7 @@ h3 {
 
 /*start roadMap*/
 .body > #roadMap.body-content {
-    background-image: url(../img/bg-section3.png);
+    /* background-image: url(../img/bg-section3.png); */
     background-size: cover;
     background-position: center top;
     background-repeat: no-repeat;
@@ -465,7 +466,7 @@ h3 {
 
 /*start team*/
 .body > #teams.body-content {
-    background-image: url(../img/bg-section3.png);
+    /* background-image: url(../img/bg-section3.png); */
     background-size: cover;
     background-position: center top;
     background-repeat: no-repeat;

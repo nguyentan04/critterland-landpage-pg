@@ -29,6 +29,7 @@ window.onscroll = function() {
     }
 
     setTimeout(function(){ reveal(); }, TIME_OUT);
+    setTimeout(function(){ ctrEffect(); }, TIME_OUT); 
     setTimeout(function(){ roadmapEffect(); }, TIME_OUT);
 }
 
@@ -40,6 +41,8 @@ $(document).ready(function(){
         setTimeout(function(){$("#id_mobile_open_menu").click(function(){ replaceClassByIdAndData('id_mobile_open_menu', 'open', 'close');}); }, TIME_OUT);
         setTimeout(function(){$(".hide-mobile-menu").click(function(){ hideMenuMobile();}); }, TIME_OUT);
         
+        //action ctr info
+        setTimeout(function(){ ctrEffect(); }, TIME_OUT);
     }catch(e){
         log(e);
     }
@@ -104,6 +107,15 @@ reveal = function() {
       } else {
         reveals[i].classList.remove("active");
       }
+    }
+}
+
+ctrEffect = function() {
+    var reveals = document.querySelectorAll(".ctr");
+  
+    for (var i = 0; i < reveals.length; i++) {
+        reveals[i].classList.remove("inactiveLeft");
+        reveals[i].classList.remove("inactiveRight");
     }
 }
 

@@ -18,7 +18,7 @@ html {
     background-color: rgba(22, 58, 80, 0.8);
 }
 h2 {
-    color: #00ffd8;    
+    color: #f5f5f5;    
     font-weight: bold;
     font-size: 30px;
     line-height: 130%;
@@ -300,7 +300,7 @@ h3 {
     height: 100vh;
 }
 
-img[class^="ctr"] {
+img[class^="homectr_"] {
     position: absolute;
 
     -webkit-transition: 1s all ease;
@@ -308,8 +308,11 @@ img[class^="ctr"] {
     -o-transition: 1s all ease;
     transition: 1s all ease;
 }
+img[class^="homectr_"]:hover {
+    position: absolute;
+}
 
-.ctr_01 {
+.homectr_01 {
     width: 10vw;
     bottom: 0px;
     z-index: 8;
@@ -319,16 +322,16 @@ img[class^="ctr"] {
     -o-transform: translateX(12vw);
     transform: translateX(12vw);
 }
-.ctr_02 {
+.homectr_02 {
     width: 20vw;
     bottom: 0px;
-
+    z-index: 2;
     -webkit-transform: translateX(16vw);
     -moz-transform: translateX(16vw);
     -o-transform: translateX(16vw);
     transform: translateX(16vw);
 }
-.ctr_03 {
+.homectr_03 {
     width: 18vw;
     bottom: 0px;
     z-index: 3;
@@ -338,18 +341,17 @@ img[class^="ctr"] {
     -o-transform: translateX(29vw);
     transform: translateX(29vw);
 }
-.ctr_04 {
-    width: 23vw;
+.homectr_04 {
+    width: 29vw;
     bottom: 0px;
     z-index: 1;
-
-    -webkit-transform: translateX(30vw);
-    -moz-transform: translateX(30vw);
-    -o-transform: translateX(30vw);
-    transform: translateX(30vw);
+    -webkit-transform: translateX(26vw);
+    -moz-transform: translateX(26vw);
+    -o-transform: translateX(26vw);
+    transform: translateX(26vw);
 }
 
-.ctr_05 {
+.homectr_05 {
     width: 7vw;
     bottom: 0px;
     z-index: 8;
@@ -359,7 +361,7 @@ img[class^="ctr"] {
     -o-transform: translateX(47vw);
     transform: translateX(47vw);
 }
-.ctr_06 {
+.homectr_06 {
     width: 13vw;
     bottom: 0px;
     z-index: 8;
@@ -369,7 +371,7 @@ img[class^="ctr"] {
     -o-transform: translateX(53vw);
     transform: translateX(53vw);
 }
-.ctr_07 {
+.homectr_07 {
     width: 11vw;
     bottom: 0px;
     z-index: 6;
@@ -379,7 +381,7 @@ img[class^="ctr"] {
     -o-transform: translateX(62vw);
     transform: translateX(62vw);
 }
-.ctr_08 {
+.homectr_08 {
     width: 18vw;
     bottom: 0px;
 
@@ -392,13 +394,17 @@ img[class^="ctr"] {
 
 /*GamePlay*/
 .body > #gamePlay.body-content {
-    /* background-image: url(../img/bg-section2.jpg); */
+    background-image: url(../img/bg-section3.jpg);
     background-size: cover;
     background-position: center top;
     background-repeat: no-repeat;
     position: relative;
     width: 100%;
     display: block;
+}
+.body > .body-content > .content-gameplay {
+    padding-top:40px;
+    padding-bottom:40px;
 }
 .body > .body-content > .content-gameplay > .gameplay-header{
     margin: 0 auto;
@@ -446,7 +452,7 @@ img[class^="ctr"] {
 
 /*start mobaEsport*/
 .body > #mobaEsport.body-content {
-    /* background-image: url(../img/bg-section2.jpg); */
+    background-image: url(../img/bg-section2.jpg);
     background-size: cover;
     background-position: center top;
     background-repeat: no-repeat;
@@ -455,14 +461,16 @@ img[class^="ctr"] {
     display: block;
 }
 .body > .body-content > .content-mobaesport {
+    padding-top:40px;
+    padding-bottom:40px;
     margin: 0 auto;
     width: 310px;
 }
 .body > .body-content > .content-mobaesport > .mobaesport-play {
-    color: rgb(248, 203, 99);
+    color: #ffd500;
     font-family: Kanit;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 42px;
     line-height: 130%;
     text-transform: uppercase;
     text-align: center;
@@ -473,6 +481,7 @@ img[class^="ctr"] {
     position: relative;
     width: 100%;
 }
+
 .body > .body-content > .content-mobaesport > .mobaesport-video > img {
     height: auto;
     max-width: 100%;
@@ -484,6 +493,64 @@ img[class^="ctr"] {
     width: 81%;
     height: 89%;
     margin: auto;
+}
+
+img[class^="mobactr"] {
+    position: absolute;
+    -webkit-transform: scaleX(-1);
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    transform: scaleX(-1);
+
+    -webkit-transition: 1s all ease;
+    -moz-transition: 1s all ease;
+    -o-transition: 1s all ease;
+    transition: 1s all ease;
+}
+
+.mobactr_02 {
+    width: 15vw;
+    bottom: 0px;
+    z-index: 2;
+    left: 63vw;
+    -webkit-transform: translateX(63vw);
+    -moz-transform: translateX(63vw);
+    -o-transform: translateX(63vw);
+    transform: translateX(63vw);
+}
+
+.mobactr_04 {
+    width: 29vw;
+    bottom: 0px;
+    z-index: 1;
+    left: 47vw;
+    -webkit-transform: translateX(47vw);
+    -moz-transform: translateX(47vw);
+    -o-transform: translateX(47vw);
+    transform: translateX(47vw);
+}
+
+img[class^="mobaIcon_"] {
+    position: absolute;
+    width: 2vw;
+
+    -webkit-transition: 1s all ease;
+    -moz-transition: 1s all ease;
+    -o-transition: 1s all ease;
+    transition: 1s all ease;
+}
+
+.mobaIcon_1 {
+    left: 16vw;
+    top: 3vw;
+}
+.mobaIcon_2 {
+    bottom:  1vw;
+    left: 46vw;
+}
+.mobaIcon_3 {
+    right: 3vw;
+    top: 10vw;
 }
 /*end mobaEsport*/
 
@@ -715,12 +782,14 @@ img[class^="ctr"] {
     transform: translateX(0);
     opacity: 1;
 }
-img[class^="ctr"].inactiveLeft{
+img[class^="mobactr_"].inactiveLeft
+,img[class^="homectr_"].inactiveLeft{
     transform: translateX(0);
     transition: 1s all ease;
     opacity: 0;
 }
-img[class^="ctr"].inactiveRight{
+img[class^="mobactr_"].inactiveRight
+,img[class^="homectr_"].inactiveRight{
     transform: translateX(90vw);
     transition: 1s all ease;
     opacity: 0;
@@ -729,4 +798,31 @@ img[class^="ctr"].inactiveRight{
     .header > .desktop {
         display: block;
     }
+
+    h2 {
+        font-size: 53px;
+    }
+    h3 {
+        font-size: 13px;
+    }
+    
+    /*start mobaEsport*/
+    .body > .body-content > .content-mobaesport {
+        width: 400px;
+        margin-left: 250px;
+    }
+    /*start mobaEsport*/
+
+    /*start gamePlay*/
+    .body > .body-content > .content-gameplay > .gameplay-slide > .slide-menu {
+        width: 615px;
+    }
+    .slide-item.hide{
+        display: inline-block !important;
+    }
+    .control.prev
+    ,.control.next {
+        display: none;
+    }
+    /*start gamePlay*/
 }

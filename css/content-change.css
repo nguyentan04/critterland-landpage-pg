@@ -293,16 +293,16 @@ h3 {
     
 }
 .body > #home.body-content {
-    background: url(image.jpg) no-repeat center top;
     background-image: url(../img/bg-section1.jpg);
     background-size: cover;
     background-position: center top;
     background-repeat: no-repeat;
     position: relative;
-    /* max-width: 1024px; */
     margin: 0 auto;
-    height: 100vh;
+    height: 50vh;
 }
+
+
 
 img[class^="homectr_"] {
     position: absolute;
@@ -318,7 +318,6 @@ img[class^="homectr_"]:hover {
 
 .homectr_01 {
     width: 10vw;
-    bottom: 0px;
     z-index: 8;
 
     -webkit-transform: translateX(12vw);
@@ -328,7 +327,6 @@ img[class^="homectr_"]:hover {
 }
 .homectr_02 {
     width: 20vw;
-    bottom: 0px;
     z-index: 2;
     -webkit-transform: translateX(16vw);
     -moz-transform: translateX(16vw);
@@ -337,7 +335,6 @@ img[class^="homectr_"]:hover {
 }
 .homectr_03 {
     width: 18vw;
-    bottom: 0px;
     z-index: 3;
 
     -webkit-transform: translateX(29vw);
@@ -347,7 +344,6 @@ img[class^="homectr_"]:hover {
 }
 .homectr_04 {
     width: 29vw;
-    bottom: 0px;
     z-index: 1;
     -webkit-transform: translateX(26vw);
     -moz-transform: translateX(26vw);
@@ -357,7 +353,6 @@ img[class^="homectr_"]:hover {
 
 .homectr_05 {
     width: 7vw;
-    bottom: 0px;
     z-index: 8;
 
     -webkit-transform: translateX(47vw);
@@ -367,7 +362,6 @@ img[class^="homectr_"]:hover {
 }
 .homectr_06 {
     width: 13vw;
-    bottom: 0px;
     z-index: 8;
 
     -webkit-transform: translateX(53vw);
@@ -377,7 +371,6 @@ img[class^="homectr_"]:hover {
 }
 .homectr_07 {
     width: 11vw;
-    bottom: 0px;
     z-index: 6;
 
     -webkit-transform: translateX(62vw);
@@ -387,7 +380,6 @@ img[class^="homectr_"]:hover {
 }
 .homectr_08 {
     width: 18vw;
-    bottom: 0px;
 
     -webkit-transform: translateX(66vw);
     -moz-transform: translateX(66vw);
@@ -517,7 +509,6 @@ img[class^="mobactr"] {
 
 .mobactr_02 {
     width: 15vw;
-    bottom: 0px;
     z-index: 2;
     left: 63vw;
     -webkit-transform: translateX(63vw);
@@ -528,13 +519,17 @@ img[class^="mobactr"] {
 
 .mobactr_04 {
     width: 29vw;
-    bottom: 0px;
     z-index: 1;
     left: 47vw;
     -webkit-transform: translateX(47vw);
     -moz-transform: translateX(47vw);
     -o-transform: translateX(47vw);
     transform: translateX(47vw);
+}
+
+.mobactr_02
+,.mobactr_04 {
+    display: none;
 }
 
 img[class^="mobaIcon_"] {
@@ -559,6 +554,7 @@ img[class^="mobaIcon_"] {
     right: 3vw;
     top: 10vw;
 }
+
 /*end mobaEsport*/
 
 /*start nftsItem*/
@@ -823,6 +819,22 @@ img[class^="mobactr_"].inactive.right
     transition: 1s all ease;
     opacity: 0;
 }
+
+/*Animation*/
+.homectr_01
+,.homectr_02 
+,.homectr_03 
+,.homectr_04 
+,.homectr_05
+,.homectr_06 
+,.homectr_07 
+,.homectr_08 
+,.mobactr_02
+,.mobactr_04 {
+    bottom: 0px;
+}
+/*Animation*/
+
 @media screen and (min-width: 1024px){
     .header > .desktop {
         display: block;
@@ -875,4 +887,27 @@ img[class^="mobactr_"].inactive.right
         display: block;
     }
     /*footer*/
+
+    /*Animation*/
+    .homectr_01
+    ,.homectr_02 
+    ,.homectr_03 
+    ,.homectr_04 
+    ,.homectr_05
+    ,.homectr_06 
+    ,.homectr_07 
+    ,.homectr_08 
+    ,.mobactr_02
+    ,.mobactr_04 {
+        bottom: 0px;
+    }
+    .mobactr_02
+    ,.mobactr_04 {
+        display: block;
+    }
+    /*Animation*/
+    
+    .body > #home.body-content {
+        height: 100vh;
+    }
 }

@@ -234,40 +234,41 @@ h3 {
     color: #000000;;
 }
 
-
-.footer > .desktop {
-    display: none;
-}
 .footer {
-    background: #3c6ffc;    
+    background: #000000;    
     position: fixed;
     bottom: 0px;
     width: 100%;
     z-index: 300;
 }
-.footer > .mobile > .footer-menu {
+.footer > .footer-menu.mobile {
     margin: 0 auto;
-    width: 310px;
+    max-width: 310px;
 }
-.footer > .mobile > .footer-menu > .footer-icon> .footer-item {
+.footer > .footer-menu.desktop {
+    margin: 0 auto;
+    max-width: 800px;
+    display: none;
+}
+.footer > .footer-menu > .footer-icon> .footer-item {
     margin:5px;
     float:left;
 }
-.footer > .mobile > .footer-menu > .footer-icon> .footer-item.icon {
+.footer > .footer-menu > .footer-icon> .footer-item.icon {
     width: 50px;
     height: 50px;
     border-radius: 50%;
     border: 1px solid white;
 }
-.footer > .mobile > .footer-menu > .footer-icon> .footer-item.label {
+.footer > .footer-menu > .footer-icon> .footer-item.label {
     line-height: 50px;
     color:white;
 }
-.footer > .mobile > .footer-menu > .footer-icon> .footer-item > .pancakeswap-cake{
+.footer > .footer-menu > .footer-icon> .footer-item > .pancakeswap-cake{
     width: 40px;
     margin: 5px;
 }
-.footer > .mobile > .footer-menu > .footer-icon> .footer-item.coin { 
+.footer > .footer-menu > .footer-icon> .footer-item.coin { 
     color: white;
     background: #34a853;
     border-radius: 32px;
@@ -856,4 +857,13 @@ img[class^="mobactr_"].inactive.right
         display: none;
     }
     /*start gamePlay*/
+
+    /*footer*/
+    .footer > .footer-menu.mobile {
+        display: none;
+    }
+    .footer > .footer-menu.desktop {
+        display: block;
+    }
+    /*footer*/
 }

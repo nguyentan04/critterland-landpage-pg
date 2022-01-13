@@ -207,7 +207,7 @@ h3 {
     text-align: center;
     color: white;
     position: relative;
-    top: 77px;
+    top: 0px;
     z-index: 0;
 }
 .header-info-token > p{
@@ -838,7 +838,15 @@ img[class^="mobactr_"].inactive.right
     h3 {
         font-size: 13px;
     }
-    
+    /*header mobile*/
+    .header > .mobile {
+        display: none;
+    } 
+    .header-info-token {
+        top: 77px;
+    }   
+    /*header mobile*/
+
     /*start mobaEsport*/
     .body > .body-content > .content-mobaesport {
         width: 400px;

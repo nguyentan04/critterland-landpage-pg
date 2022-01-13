@@ -114,8 +114,7 @@ ctrEffect = function() {
     var reveals = document.querySelectorAll(".ctr");
   
     for (var i = 0; i < reveals.length; i++) {
-        reveals[i].classList.remove("inactiveLeft");
-        reveals[i].classList.remove("inactiveRight");
+        reveals[i].classList.remove("inactive");
     }
 }
 

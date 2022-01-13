@@ -413,7 +413,7 @@ img[class^="homectr_"]:hover {
 }
 .body > .body-content > .content-gameplay > .gameplay-header > h2 > span{
     color: rgba(255, 255, 255, 0.1);
-    text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+    -webkit-text-stroke: 1px white;
 }
 /*Slide show */
 .body > .body-content > .content-gameplay > .gameplay-slide > .slide-menu {
@@ -604,19 +604,23 @@ img[class^="mobaIcon_"] {
 
 /*start coinToken*/
 .body > #coinToken.body-content {
-    /* background-image: url(../img/bg-section3.png); */
-    background-size: cover;
-    background-position: center top;
-    background-repeat: no-repeat;
+    background-color: #062435;
     position: relative;
     width: 100%;
     display: block;
+    padding-top:40px;
+    padding-bottom:40px;
+}
+
+.body > .body-content > .content-token{
+    margin: 0 auto;
+    max-width: 1000px;
 }
 /*end coinToken*/
 
 /*start roadMap*/
 .body > #roadMap.body-content {
-    /* background-image: url(../img/bg-section3.png); */
+    background-image: url(../img/bg-section5.jpg);
     background-size: cover;
     background-position: center top;
     background-repeat: no-repeat;
@@ -627,6 +631,8 @@ img[class^="mobaIcon_"] {
 .body > .body-content > .content-roadmap {
     color: white;
     margin: 0 auto;
+    padding-top:40px;
+    padding-bottom:40px;
 }
 .body > .body-content > .content-roadmap > .content-roadmap-info {
     margin: 0 auto;
@@ -726,6 +732,22 @@ img[class^="mobaIcon_"] {
 }
 /*end team*/
 
+/**backersPartners*/
+.body > #backersPartners.body-content {
+    background-color: #032a3c;
+    position: relative;
+    width: 100%;
+    display: block;
+    padding-top:40px;
+    padding-bottom:40px;
+    height: 500px;
+}
+
+.body > .body-content > .content-backersPartners{
+    margin: 0 auto;
+    max-width: 1000px;
+}
+/**backersPartners*/
 .pointer {
     cursor: pointer;
 }
@@ -768,32 +790,32 @@ img[class^="mobaIcon_"] {
 
 .roadmapEffect.right{
     position: relative;
-    /* transform: translateX(300px); */
-    left: calc(50% - 4px);
-    opacity: 1;
-    transition: 1s all ease;
-}
-.roadmapEffect.left{
-    position: relative;
-    transform: translateX(-150px);
+    transform: translateX(calc(200%));
+    opacity: 0;
     transition: 1s all ease;
 }
 .roadmapEffect.right.active{
-    transform: translateX(150px);
+    transform: translateX(calc(101%));
     opacity: 1;
+}
+.roadmapEffect.left{
+    position: relative;
+    opacity: 0;
+    transform: translateX(calc(-100%));
+    transition: 1s all ease;
 }
 .roadmapEffect.left.active{ 
     transform: translateX(0);
     opacity: 1;
 }
-img[class^="mobactr_"].inactiveLeft
-,img[class^="homectr_"].inactiveLeft{
+img[class^="mobactr_"].inactive.left
+,img[class^="homectr_"].inactive.left{
     transform: translateX(0);
     transition: 1s all ease;
     opacity: 0;
 }
-img[class^="mobactr_"].inactiveRight
-,img[class^="homectr_"].inactiveRight{
+img[class^="mobactr_"].inactive.right
+,img[class^="homectr_"].inactive.right{
     transform: translateX(90vw);
     transition: 1s all ease;
     opacity: 0;

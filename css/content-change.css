@@ -243,6 +243,7 @@ h3 {
     position: fixed;
     bottom: 0px;
     width: 100%;
+    z-index: 300;
 }
 .footer > .mobile > .footer-menu {
     margin: 0 auto;

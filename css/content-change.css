@@ -56,7 +56,7 @@ h3 {
 
 /* Header desktop */
 .header > .desktop {
-    display: none;
+    /* display: none; */
 }
 .header > .desktop {
     margin: 0 auto;
@@ -287,7 +287,7 @@ h3 {
 
 /*HOME Welcome*/
 .body {
-    margin-top: -16px;
+    /* margin-top: -16px; */
 }
 .body > .body-content {
     
@@ -299,7 +299,7 @@ h3 {
     background-repeat: no-repeat;
     position: relative;
     margin: 0 auto;
-    height: 50vh;
+    height: 100vh;
 }
 
 
